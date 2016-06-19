@@ -37,3 +37,4 @@ defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID
 - XAlign // 规范化代码
 - FastStub // 快速生成简单代码集合 cont+cmd+k
 - RTImageAssets  // 自动根据@3x图片填充@2x图片
+- QuickLocalization // 快速国际化

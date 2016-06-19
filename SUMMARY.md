@@ -5,5 +5,6 @@
    * [1.1 OC基础知识](ocji_chu_zhi_shi.md)
 * [2. 插件篇](cha_jian_pian.md)
    * [2.1 插件总结](cha_jian_zong_jie.md)
-* 其他
+* [其他](qi_ta.md)
    * 其他
+

@@ -6,5 +6,5 @@
 * [2. 插件篇](cha_jian_pian.md)
    * [2.1 插件总结](cha_jian_zong_jie.md)
 * [其他](qi_ta.md)
-   * 其他
+   * 流媒体
 

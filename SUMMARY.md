@@ -7,6 +7,6 @@
    * [2.1 插件总结](cha_jian_zong_jie.md)
 * [其他](qi_ta.md)
    * [流媒体](liu_mei_ti.md)
-* [IAP支付流程](iapzhi_fu_liu_cheng.md)
+* [内购、支付](iapzhi_fu_liu_cheng.md)
 * [Swift学习](swiftxue_xi.md)
 

@@ -8,6 +8,6 @@
 * [其他](qi_ta.md)
    * [流媒体](liu_mei_ti.md)
 * [内购、支付](iapzhifu_liu_cheng_md.md)
-   * IAP支付流程
+   * [IAP支付流程](iapzhi_fu_liu_cheng.md)
 * [Swift学习](swiftxue_xi.md)
 

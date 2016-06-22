@@ -1,7 +1,7 @@
 # OC基础知识
 
 
-# self.property和_property的区别
+## self.property和_property的区别
 假如类classA有一个属性name.
 关于那么关于在classA的init方法里使用`self.name`和`_name`的区别
 - `self.name`会调用set方法。
@@ -40,7 +40,7 @@ eg:
 
 在一般的赋值行为中，无论是self.name还是_name也是影响不大的。但是嘛，在一个类的init的方法中，是有区别的，具体可以看苹果的官方推荐：不建议使用`self.name`,而是使用`_name`
 
-# init方法里的self.property和_property的区别
+## init方法里的self.property和_property的区别
 
 苹果官方建议，在任何的init方法中不要使用self.property的方式访问，因为如果子类中重写了setProperty方法，那么在父类的init函数中调用的就是子类的setProperty方法，这样可能会产生一些不容易预知的情况。
 eg:

@@ -6,11 +6,13 @@ class只能用在class类型，但是static在结构体/class/enum都能用。
 两者区别：如果用在class类型里面那么static = final class func
 
 ##swift最简单的单利写法
-class ArticleDao: BaseObject {
+``` objc
+class TestDao: NSObject {
 
     static let dataCenterObj = ArticleDao()
     private override init() {}
 
     
 }
+```
 

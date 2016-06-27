@@ -47,3 +47,15 @@ lazy var printName: ()->() = {
     }
 ```
 
+##swift自定义打印函数
+
+Xcode中是允许自定义宏定义,这种方式在即使Swift中也是可行的。具体操作如下:
+
+一、设置Swift自定义的宏定义​
+
+1、Target->Build Settings -> Swift Compiler - Custom Flags​
+
+2、添加Debug下的-DDEBUG，添加Release下的-DRELEASE
+
+这样设置后就可以正常的使用#if DEBUG了
+

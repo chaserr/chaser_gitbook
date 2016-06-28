@@ -72,3 +72,73 @@ internal访问级别所修饰的属性或方法在源代码所在的整个模块
 
 3，public
 可以被任何人使用
+
+##swift2.0————guard语句和defer语句
+
+- 1.guard语句
+
+guard语句只会有一个代码块，不像if语句可以if else多个代码块。
+那么guard语句的作用到底是什么呢？顾名思义，就是守护。guard语句判断其后的表达式布尔值为false时，才会执行之后代码块里的代码，如果为true，则跳过整个guard语句。
+``` objc
+func checkup(person: [String: String!]) {
+   
+    // 检查身份证，如果身份证没带，则不能进入考场
+    guard let id = person["id"] else {
+        print("没有身份证，不能进入考场!")
+        return
+    }
+     
+    // 检查准考证，如果准考证没带，则不能进入考场
+    guard let examNumber = person["examNumber"] else {
+        print("没有准考证，不能进入考场!")
+        return
+    }
+     
+    // 身份证和准考证齐全，方可进入考场
+    print("您的身份证号为:\(id)，准考证号为:\(examNumber)。请进入考场!")
+     
+}
+checkup(["id": "123456"]) // 没有准考证，不能进入考场!
+checkup(["examNumber": "654321"]) // 没有身份证，不能进入考场!
+checkup(["id": "123456", "examNumber": "654321"]) // 您的身份证号为:123456，准考证号为:654321。请进入考场!
+```
+- 2.guard语句
+在一些语言中，有try/finally这样的控制语句，比如Java。这种语句可以让我们在finally代码块中执行必须要执行的代码，不管之前怎样的兴风作浪。在Swift 2.0中，Apple提供了defer关键字，让我们可以实现同样的效果。
+``` objc
+func writeSomething() {
+     
+    let file = OpenFile()
+     
+    let ioStatus = fetchIOStatus()
+    guard ioStatus != "error" else {
+        return
+    }
+    file.write()
+     
+    closeFile(file)
+     
+}
+```
+
+上述示例是一个I/O操作的伪代码，如果获取到的ioStatus正常，那么该方法没有问题，如果ioStatus取到的是error，那么会被guard语句抓到执行return操作，这样的话closeFile(file)就永远都不会执行了，一个严重的Bug就这样产生了。下面我们看看如何用defer来解决这个问题：
+``` objc
+func writeSomething() {
+     
+    let file = OpenFile()
+    defer {
+        closeFile(file)
+    }
+     
+    let ioStatus = fetchIOStatus()
+    guard ioStatus != "error" else {
+        return
+    }
+    file.write()
+     
+}
+```
+我们将closeFile(file)放在defer代码块里，这样即使ioStatus为error，在执行return前会先执行defer里的代码，这样就保证了不管发生什么，最后都会将文件关闭。
+
+defer又一个保证我们代码健壮性的特性，我非常喜欢
+
+http://www.cocoachina.com/swift/20150623/12231.html

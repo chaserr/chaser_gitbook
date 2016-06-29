@@ -258,4 +258,35 @@ extension DefaultsKeys {
         }
 ```
 
+###UserDefault的小补充
+使用NSUserDefaults存储自定义的对象
 
+1.先将对象进行归档（NSCoding）
+
+2.然后将对象转换成NSData
+
+``` objc
+//将student类型变为NSData类型
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:student];
+    
+```
+3.然后写入NSUserDefaults或者文件
+
+``` objc
+NSData *data = [NSKeyedArchiver archivedDataWithRootObject:student];   
+       
+       NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    [user setObject:data forKey:@"oneStudent"];
+    
+```
+
+4.读取数据
+
+``` objc
+NSdData *data = [user objectForKey:@"oneStudent"];
+    
+ Student *student = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+ 
+```

@@ -1,4 +1,5 @@
 # Swift Blog
+### To learn a little a day
 
 ## static和class
 
@@ -142,3 +143,38 @@ func writeSomething() {
 defer又一个保证我们代码健壮性的特性，我非常喜欢
 
 http://www.cocoachina.com/swift/20150623/12231.html
+
+##swift--使用convenience创建便利构造器
+
+首先，重写init方法：
+然后，创建便利构造器，注意使用convenience，其中，self.init()就是调用上面init(frame: CGRect)方法，我们在初始化时传一个字符串，并且创建一个label，把这个字符串给label：
+``` objc
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    convenience init(str:String){
+    
+        self.init()
+        let label = UILabel()
+        label.text = str
+        label.backgroundColor = UIColor.yellowColor()
+        label.frame = CGRectMake(10, 20, 150, 30)
+        self.addSubview(label)
+        
+    }
+ ```
+ 
+ 下面，就是在自定义UIView中的方法，下面我们开始使用了
+``` objc
+
+        let testView = Test(str:"我是便利构造器")
+        
+        testView.backgroundColor = UIColor.redColor()
+        testView.frame = CGRectMake(30, 30, 200, 100)
+        self.view.addSubview(testView)
+ ```

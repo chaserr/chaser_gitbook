@@ -6,16 +6,25 @@
 class只能用在class类型，但是static在结构体/class/enum都能用。
 两者区别：如果用在class类型里面那么static = final class func
 
-##swift最简单的单利写法
+##swift单利模式
+1. 最简单的单利写法
 ``` objc
 class TestDao: NSObject {
 
     static let dataCenterObj = ArticleDao()
     private override init() {}
 
-    
 }
 ```
+2. 单利2
+``` objc
+    class var sharedInstance : YYDateAppInfo {
+        struct Static {
+            static let instance : YYDateAppInfo = YYDateAppInfo()
+        }
+        return Static.instance
+    }
+    ```
 
 ##swift归档
 Swift实现对象归档时有几个注意点
@@ -195,3 +204,58 @@ func validIntValueForKey(key: String) -> Int {
 }
 
 ```
+
+
+## SwiftyUserDefaults简单使用
+
+1.先自定义自己的key值 
+
+i.e
+
+``` objc
+
+extension DefaultsKeys {
+    static let account          = DefaultsKey<String?>("userName")
+    static let password         = DefaultsKey<String?>("password")
+
+}
+
+```
+
+2.然后使用它,存值
+``` objc
+    func save() {
+        Defaults[.account]          = self.account
+        Defaults[.password]         = self.password
+    }
+```
+
+3.取值
+
+
+``` objc
+    init() {
+
+        self.account                = Defaults[.account]
+        self.password               = Defaults[.password]
+
+    }
+ ```
+ 
+4.也可以不扩展直接使用
+``` objc
+ //        存值：
+        Defaults["user"] = "tongxing"
+        //        取值：
+
+//        let getUser = Defaults["user"].stringValue
+        let getuser1 = DefaultsKey<String?>("user")
+        AODlog("\(getuser1)")
+        
+        if Defaults.hasKey("user") {
+            
+            AODlog("存在")
+        }
+```
+
+

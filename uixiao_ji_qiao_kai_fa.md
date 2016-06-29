@@ -18,3 +18,24 @@ self: the number of samples where this symbol was at the bottom of the stack tra
 % self: the percent of self samples relative to total samples of currently displayed call tree
 (eg - #self / total samples).
 So this wouldn't tell you how many times a method was called. But it would give you an idea how much time is spent in a method or lower in the call tree.
+
+##使用NSUserDefaults存储自定义的对象
+1.先将对象进行归档（NSCoding）
+2.然后将对象转换成NSData
+
+``` objc
+//将student类型变为NSData类型
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:student];
+    
+```
+3.然后写入NSUserDefaults或者文件
+
+``` objc
+NSData *data = [NSKeyedArchiver archivedDataWithRootObject:student];   
+       
+       NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    [user setObject:data forKey:@"oneStudent"];
+    
+```

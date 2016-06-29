@@ -290,3 +290,6 @@ NSdData *data = [user objectForKey:@"oneStudent"];
  Student *student = [NSKeyedUnarchiver unarchiveObjectWithData:data];
  
 ```
+
+
+##swift的枚举

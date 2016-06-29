@@ -178,3 +178,20 @@ http://www.cocoachina.com/swift/20150623/12231.html
         testView.frame = CGRectMake(30, 30, 200, 100)
         self.view.addSubview(testView)
  ```
+ 
+ ##swift--标志？？的意思
+ 对于不期望某个optional值为nil时func返回nil 或者 因为其值为nil而停止了后续业务的情况下，我们可以用"??"在optionalValue为nil时做赋值保险操作（“??”操作后返回值为非optional）
+
+用法：
+``` objc
+newValue = optionalValue ?? value
+```
+
+若optionalValue非nil时，newValue的值为optionalValue的值，若optionalValue为nil时，newValue的值为value的值
+``` objc
+func validIntValueForKey(key: String) -> Int { 
+  let object = self.objectForKey(key) ?? Int(0)   
+//do something
+}
+
+```

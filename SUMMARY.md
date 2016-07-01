@@ -11,5 +11,5 @@
 * [内购、支付](neigou_zhifu.md)
    * [IAP支付流程](iapzhifu_liu_cheng_md.md)
 * [Swift Blog](swiftxue_xi.md)
-   * swift错误集
+   * [swift错误集](swiftcuo_wu_ji.md)
 

@@ -112,7 +112,7 @@ checkup(["id": "123456"]) // 没有准考证，不能进入考场!
 checkup(["examNumber": "654321"]) // 没有身份证，不能进入考场!
 checkup(["id": "123456", "examNumber": "654321"]) // 您的身份证号为:123456，准考证号为:654321。请进入考场!
 ```
-- 2.guard语句
+- 2.defer语句
 在一些语言中，有try/finally这样的控制语句，比如Java。这种语句可以让我们在finally代码块中执行必须要执行的代码，不管之前怎样的兴风作浪。在Swift 2.0中，Apple提供了defer关键字，让我们可以实现同样的效果。
 ``` objc
 func writeSomething() {

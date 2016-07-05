@@ -12,5 +12,5 @@
    * [IAP支付流程](iapzhifu_liu_cheng_md.md)
 * [Swift Blog](swiftxue_xi.md)
    * [swift错误集](swiftcuo_wu_ji.md)
-   * swift+alomfire+realm
+   * [swift+alomfire+realm](swift+alomfire+realm.md)
 

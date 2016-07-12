@@ -293,3 +293,30 @@ NSdData *data = [user objectForKey:@"oneStudent"];
 
 
 ##swift的枚举
+
+##swift之lazy属性
+在swift2.2中，lazy就相当于OC中的懒加载（调用getter方法）
+格式：
+``` objc 
+lazy var 变量: 类型 = { 创建变量代码 }()
+```
+
+本质：i.e.
+``` objc
+   // 含义: 当dataList被使用到时, 就会执行等号后面的闭包
+    // 所以等号后面的闭包的()是必须写的, 如果不写就会报错
+    // 注意点: 如果写懒加载, 那么修饰符必须用var
+    lazy var dataList:[String] = {
+        print("我被加载了")
+        return ["lnj", "lmj", "zs"]
+    }()
+```
+上面的代码相当于执行了下面的两条语句
+``` objc
+ lazy var satatuses: [String] = self.loadStatus()
+    func loadStatus() -> [String]
+    {
+        print("我被加载了")
+        return ["lnj", "lmj", "zs"]
+    }
+```

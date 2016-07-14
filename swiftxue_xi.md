@@ -47,6 +47,7 @@ lazy var printName: ()->() = {
 ```
 2. 使用unowned
 ``` objc
+// 当闭包和捕获的实例总是互相引用时并且总是同时销毁时，将闭包内的捕获定义为无主引用,当捕获引用有时可能会是  nil  时，则定义为弱引用。弱引用总是可选类型，并且当引用的实例被销毁后，弱引用的值会自动置为  nil  。这使我们可以在闭包内检查它们是否存在
  lazy var asJson:() -> String = {
         [unowned self] in //使用无主引用来解决强引用循环
         if let text = self.jValue {
@@ -319,4 +320,18 @@ lazy var 变量: 类型 = { 创建变量代码 }()
         print("我被加载了")
         return ["lnj", "lmj", "zs"]
     }
+```
+
+##swift错误之：
+``` objc
+connot convert value of type Int to type CGFloat in coercion
+
+```
+
+解决方法：
+``` objc
+// 先将Int型`titleArr.count`转换为CGFloat型
+let tableviewH:CGFloat = CGFloat(titleArr.count)
+        tableview = UITableView.init(frame: CGRectMake(50, kScreenHeight - floor(tableviewH) * 50 * 0.5, kScreenWidth - 100, tableviewH * 50))
+        
 ```

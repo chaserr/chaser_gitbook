@@ -335,3 +335,20 @@ let tableviewH:CGFloat = CGFloat(titleArr.count)
         tableview = UITableView.init(frame: CGRectMake(50, kScreenHeight - floor(tableviewH) * 50 * 0.5, kScreenWidth - 100, tableviewH * 50))
         
 ```
+
+
+## swift 重写系统属性的setter方法
+``` objc
+class StructLevelItem: UIButton {
+
+ // 重写setter方法，去掉高亮
+ override var highlighted: Bool {
+ get{
+
+ return false
+ }
+ set{}
+ }
+}
+
+```

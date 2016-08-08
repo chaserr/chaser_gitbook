@@ -352,3 +352,10 @@ class StructLevelItem: UIButton {
 }
 
 ```
+
+
+
+## swift snpkit
+
+left 和leftmargin的区别:假如布局一个view距离屏幕边缘的间距时
+left 默认是最左边，leftmargin则会出现系统默认的间距8

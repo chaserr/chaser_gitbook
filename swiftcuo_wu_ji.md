@@ -23,3 +23,5 @@
 2. 便利构造器必须调用同一个类中定义的其它初始化方法.
 3. 便利构造器在最后必须调用一个指定构造器.
 
+
+## swiftError：Swift Variable used within its own initial value

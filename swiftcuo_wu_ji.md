@@ -25,3 +25,14 @@
 
 
 ## swiftError：Swift Variable used within its own initial value
+
+
+
+## swift 
+``` objc
+// 枚举的联合使用（||） 
+let opts : UIViewAnimationOptions = [.Autoreverse, .Repeat]
+
+```
+
+

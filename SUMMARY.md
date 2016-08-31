@@ -15,4 +15,5 @@
     * [swift+alomfire+realm](swift+alomfire+realm.md)
     * [swift tips](swift-tips.md)
     * [swift funtion](swift-funtion.md)
+* [oc\_消息传递机制](oc消息传递机制.md)
 

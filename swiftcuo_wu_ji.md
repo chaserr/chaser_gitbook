@@ -37,4 +37,61 @@ let opts : UIViewAnimationOptions = [.Autoreverse, .Repeat]
 
 ```
 
+##swift错误之：
+
+``` objc
+
+connot convert value of type Int to type CGFloat in coercion
+
+
+
+```
+
+
+
+解决方法：
+
+``` objc
+
+// 先将Int型`titleArr.count`转换为CGFloat型
+
+let tableviewH:CGFloat = CGFloat(titleArr.count)
+
+ tableview = UITableView.init(frame: CGRectMake(50, kScreenHeight - floor(tableviewH) * 50 * 0.5, kScreenWidth - 100, tableviewH * 50))
+
+
+
+```
+
+## swift 重写系统属性的setter方法
+
+``` objc
+
+class StructLevelItem: UIButton {
+
+
+
+ // 重写setter方法，去掉高亮
+
+ override var highlighted: Bool {
+
+ get{
+
+
+
+ return false
+
+ }
+
+ set{}
+
+ }
+
+}
+
+```
+
+
+
+
 

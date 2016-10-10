@@ -4,6 +4,7 @@
 * [1. iOS知识小结](ioszhi_shi_xiao_jie.md)
     * [1.1 OC基础知识](ocji_chu_zhi_shi.md)
     * [UI小技巧开发](uixiao_ji_qiao_kai_fa.md)
+    * [OC关键字](oc关键字.md)
 * [2. 插件篇](cha_jian_pian.md)
     * [2.1 插件总结](cha_jian_zong_jie.md)
 * [其他](qi_ta.md)
@@ -15,5 +16,7 @@
     * [swift+alomfire+realm](swift+alomfire+realm.md)
     * [swift tips](swift-tips.md)
     * [swift funtion](swift-funtion.md)
+    * [Swift 关键字](swift-关键字.md)
+    * [Swift标准协议](swift标准协议.md)
 * [oc\_消息传递机制](oc消息传递机制.md)
 

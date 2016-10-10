@@ -71,15 +71,13 @@ extern的原理:先在当前文件中查找全局变量,如果没有,再去其�
 ```
 
 #####extern和const的组合使用
-
-
 有的时候需要公开常量,就像你的女朋友需要知道今天你花了多少钱,但是你花钱的多少他是不会干涉的,所以这个时候你只需要给外界暴露出一个常量
-
-
 ``` objc
-#import @interface ViewController : UIViewController//只给外界暴露出一个制只读变量moneyextern NSString *const money;@end
+#import 
+@interface ViewController : UIViewController//只给外界暴露出一个制只读变量moneyextern NSString *const money;@end
 
 ```
+
 ``` objc
 #import "ViewController.h"NSString *const money = @"100元";
 

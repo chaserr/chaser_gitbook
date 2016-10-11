@@ -80,5 +80,11 @@ extern的原理:先在当前文件中查找全局变量,如果没有,再去其�
 
 ``` objc
 #import "ViewController.h"NSString *const money = @"100元";
-
 ```
+
+
+###nil, Nil, 和Null的区别
+他们的本质都是NULL（空字符）也就是没有被分配内存空间，其ASCLL为0，等价于没有任何值，是未知数，如果对空值做运算，结果都为空
+nil针对OC中的对象
+Nil针对OC中的类
+Null针对其他数据类型

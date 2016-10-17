@@ -58,3 +58,7 @@ Swift 中的访问控制模型基于模块和源文件这两个概念
  - fileprivate : 在当前源文件中可以访
  - private : 在当前class中可以访问(extension中也不可以访问)
  - open : 在其他模块中可以访问
+
+
+###discardableResult关键字
+表示这个方法可以不用接受返回值。那就是说如果没有这个修饰，如果方法有返回值则必须接收

@@ -10,7 +10,11 @@ int const b = 20;//b是只读变量
 
 ```
 ``` objc
-//修饰指针变量const int *temp;//*temp只读 temp只读int const *temp;//*temp只读 temp只读//这两种其实也是一样的
+//修饰指针变量
+const int *temp;
+//*temp只读 temp只读
+int const *temp;
+//*temp只读 temp只读//这两种其实也是一样的
 
 int *const temp;//因为const在*的右边,因此*temp是变量 temp是只读变量
 

@@ -19,3 +19,5 @@ self: the number of samples where this symbol was at the bottom of the stack tra
 (eg - #self / total samples).
 So this wouldn't tell you how many times a method was called. But it would give you an idea how much time is spent in a method or lower in the call tree.
 
+
+

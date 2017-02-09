@@ -71,3 +71,6 @@ Swift 中的访问控制模型基于模块和源文件这两个概念
 
 ###discardableResult关键字
 表示这个方法可以不用接受返回值。那就是说如果没有这个修饰，如果方法有返回值则必须接收
+
+### inout 和 defer
+http://ios.jobbole.com/92852/

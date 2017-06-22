@@ -6,6 +6,8 @@
   * [UI小技巧开发](uixiao_ji_qiao_kai_fa.md)
   * [OC关键字](oc关键字.md)
   * [分离.a文件的架构模式](分离a文件的架构模式.md)
+* [Open CV](open-cv.md)
+  * [利用OpenCV判定条形码的范围](open-cv/li-yong-opencv-pan-ding-tiao-xing-ma-de-fan-wei.md)
 * [2. 插件篇](cha_jian_pian.md)
   * [2.1 插件总结](cha_jian_zong_jie.md)
 * [其他](qi_ta.md)

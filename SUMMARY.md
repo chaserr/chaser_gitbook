@@ -8,6 +8,8 @@
   * [UI小技巧开发](uixiao_ji_qiao_kai_fa.md)
   * [OC关键字](oc关键字.md)
   * [分离.a文件的架构模式](分离a文件的架构模式.md)
+* [Run Time](run-time.md)
+  * [一、消息处理与消息转发](run-time/yi-3001-xiao-xi-chu-li-yu-xiao-xi-zhuan-fa.md)
 * [Open CV](open-cv.md)
   * [利用OpenCV判定条形码的范围](open-cv/li-yong-opencv-pan-ding-tiao-xing-ma-de-fan-wei.md)
 * [2. 插件篇](cha_jian_pian.md)

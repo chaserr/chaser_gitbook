@@ -1,6 +1,6 @@
 #利用OpenCV判定条形码的范围
 
-```C
+```c
 //
 //  main.cpp
 //  barcode

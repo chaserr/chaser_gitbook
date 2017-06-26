@@ -3,11 +3,14 @@
 * [Introduction](README.md)
 * [逆向工程](ni-xiang-gong-cheng.md)
   * [Hook ObjC的不定参数方法](hook-objcde-bu-ding-can-shu-fang-fa.md)
+* [AV Foundation learning](av-foundation-learning.md)
+  * [AV Foundation  名词](av-foundation-learning/av-foundation-ming-ci.md)
 * [1. iOS知识小结](ioszhi_shi_xiao_jie.md)
   * [1.1 OC基础知识](ocji_chu_zhi_shi.md)
   * [UI小技巧开发](uixiao_ji_qiao_kai_fa.md)
   * [OC关键字](oc关键字.md)
   * [分离.a文件的架构模式](分离a文件的架构模式.md)
+  * [获取不变的UDID](huo-qubu-bian-de-udid.md)
 * [Run Time](run-time.md)
   * [一、消息处理与消息转发](run-time/yi-3001-xiao-xi-chu-li-yu-xiao-xi-zhuan-fa.md)
 * [Open CV](open-cv.md)
@@ -39,6 +42,6 @@
 * [LLDB调试技巧](lldb调试技巧.md)
 * [\#define](define.md)
 * [错误集](错误集.md)
-* [文章](wen-zhang.md)
-  * [获取Cocoa类实例中任意类型的Ivar](wen-zhang/huo-qu-cocoa-lei-shi-li-zhong-ren-yi-lei-xing-de-ivar.md)
+* AV Foundation learning
+* [Linux  命令](linux-ming-ling.md)
 

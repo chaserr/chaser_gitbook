@@ -11,6 +11,7 @@
   * [OC关键字](oc关键字.md)
   * [分离.a文件的架构模式](分离a文件的架构模式.md)
   * [获取不变的UDID](huo-qubu-bian-de-udid.md)
+  * [Reveal 的使用](reveal-de-shi-yong.md)
 * [Run Time](run-time.md)
   * [一、消息处理与消息转发](run-time/yi-3001-xiao-xi-chu-li-yu-xiao-xi-zhuan-fa.md)
 * [Open CV](open-cv.md)

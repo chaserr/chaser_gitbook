@@ -94,3 +94,8 @@ gameLoop: while square != finalSquare {
 print("Game over!")
 ```
 >注意：如果上述的break语句没有使用gameLoop标签，那么它将会中断switch语句而不是while循环。使用gameLoop标签清晰的表明了break想要中断的是哪个代码块。 同时请注意，当调用continue gameLoop去跳转到下一次循环迭代时，这里使用gameLoop标签并不是严格必须的。因为在这个游戏中，只有一个循环体，所以continue语句会影响到哪个循环体是没有歧义的。然而，continue语句使用gameLoop标签也是没有危害的。这样做符合标签的使用规则，同时参照旁边的break gameLoop，能够使游戏的逻辑更加清晰和易于理解。
+
+##7. 闭包
+- 全局函数是一个有名字但不会捕获任何值的闭包
+- 嵌套函数是一个有名字并且可以捕获其封闭函数域内值的闭包
+- 闭包表达式是一个利用轻量级语法缩写的可以捕获其上下文中变量或常量值的匿名闭包

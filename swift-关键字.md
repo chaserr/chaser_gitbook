@@ -53,6 +53,21 @@ Swift 中的访问控制模型基于模块和源文件这两个概念
 表示这个方法可以不用接受返回值。那就是说如果没有这个修饰，如果方法有返回值则必须接收
 
 ### inout 和 defer
+`defer`语句将代码的执行延迟到当前的作用域退出之前
+```swift
+func processFile(filename: String) throws {
+    if exists(filename) {
+        let file = open(filename)
+        defer {
+            close(file)
+        }
+        while let line = try file.readline() {
+            // 处理文件。
+        }
+        // close(file) 会在这里被调用，即作用域的最后。
+    }
+}
+```
 http://ios.jobbole.com/92852/
 
 ### indirect

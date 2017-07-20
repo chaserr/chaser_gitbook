@@ -240,3 +240,43 @@ if let giraffe = someCreature {
 }
 ```
 
+> 带原始值的枚举类型的可失败构造器
+```swift
+enum TemperatureUnit: Character{
+    case Kelvin = "K", Celsius = "C", Fahrenheit = "F"    
+}
+
+let fahrenheitUnit = TemperatureUnit (rawValue: "X")
+if fahrenheitUnit != nil {
+    print("YES")
+}
+```
+##15. 通过闭包或函数设置属性的默认值
+```swift
+struct CheckerBoard{
+
+    let boardColors: [Bool] = {
+        var temporaryBoard = [Bool]()
+        var isBlack = false
+        for i in 1...8 {
+            for j in 1...8 {
+                temporaryBoard.append(isBlack)
+                isBlack = !isBlack
+            }
+            isBlack = !isBlack
+        }
+        
+        return temporaryBoard
+    }()
+    
+    func squareIsBlackAtRow(row: Int, column: Int) -> Bool {
+        return boardColors[(row*8) + column]
+    }
+}
+```
+注意闭包结尾的大括号后面接了一对空的小括号。这用来告诉 Swift 立即执行此闭包。如果你忽略了这对括号，相当于将闭包本身作为值赋值给了属性，而不是将闭包的返回值赋值给属性。
+>注意
+如果你使用闭包来初始化属性，请记住在闭包执行时，实例的其它部分都还没有初始化。这意味着你不能在闭包里访问其它属性，即使这些属性有默认值。同样，你也不能使用隐式的self属性，或者调用任何实例方法。
+
+##16. 解决实例之间的循环强引用
+Swift 提供了两种办法用来解决你在使用类的属性时所遇到的循环强引用问题：弱引用（weak reference）和无主引用（unowned reference）。

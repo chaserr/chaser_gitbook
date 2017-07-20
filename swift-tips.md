@@ -216,6 +216,27 @@ swift 的类构造器的安全检查
 如果子类没有定义任何指定构造器，它将自动继承所有父类的指定构造器。
 
 - 规则 2
-如果子类提供了`所有父类``指定构造器``的实现`——无论是通过规则 1 继承过来的，还是提供了自定义实现——它将自动继承所有父类的便利构造器。
+如果子类提供了`所有``父类指定构造器``的实现`——无论是通过规则 1 继承过来的，还是提供了自定义实现——它将自动继承所有父类的便利构造器。
 即使你在子类中添加了更多的便利构造器，这两条规则仍然适用。
+###14.2 可失败构造器
+```swift
+
+// init前面+“？”，表示可构造失败
+struct Animal{
+
+    let species: String
+    init?(species: String) {
+        if species.isEmpty {
+            return nil
+        }
+        self.species = species
+    }
+    
+}
+
+let someCreature = Animal (species: "")
+if let giraffe = someCreature {
+    print("yes")
+}
+```
 

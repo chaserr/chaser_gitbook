@@ -310,4 +310,48 @@ Swift 中，你甚至可以对协议进行扩展，提供协议要求的实现�
 1. 扩展能为类添加新的便利构造器，但是它们不能为类添加新的指定构造器或析构器。指定构造器和析构器必须总是由原始的类实现来提供。
 
 
+##18. 协议 protocol
+###18.1 协议作为类型
+协议可以像其他普通类型一样使用，使用场景如下：
+- 作为函数、方法或构造器中的参数类型或返回值类型
+- 作为常量、变量或属性的类型
+- 作为数组、字典或其他容器中的元素类型
+```swift
+// 协议
+protocol RandomNumberGenerator {
 
+    func random() -> Double
+}
+// 遵循协议的类
+class linearCongruentialGenerator: RandomNumberGenerator{
+
+    var lastRandom = 42.0
+    let m = 139968.0
+    let a = 3877.0
+    let c = 29573.9
+    func random() -> Double {
+        lastRandom = (lastRandom * a + c).truncatingRemainder(dividingBy: m)
+        return lastRandom / m
+    }
+}
+
+// 协议作为类型传递
+class Dice{
+    
+    let sides: Int
+    let generator: RandomNumberGenerator
+    init(sides: Int, generator: RandomNumberGenerator) {
+        self.sides = sides
+        self.generator = generator
+    }
+    
+    func roll() -> Int {
+        return Int(generator.random() * Double(sides)) + 1
+    }
+    
+}
+
+var d6 = Dice (sides: 6, generator: linearCongruentialGenerator())
+```
+
+generator 属性的类型为 RandomNumberGenerator，因此任何遵循了 RandomNumberGenerator 协议的类型的实例都可以赋值给 generator，除此之外并无其他要求。

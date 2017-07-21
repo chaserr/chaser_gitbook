@@ -355,3 +355,113 @@ var d6 = Dice (sides: 6, generator: linearCongruentialGenerator())
 ```
 
 generator 属性的类型为 RandomNumberGenerator，因此任何遵循了 RandomNumberGenerator 协议的类型的实例都可以赋值给 generator，除此之外并无其他要求。
+
+###18.2 类类型专属协议
+你可以在协议的继承列表中，通过添加 class 关键字来限制协议只能被类类型遵循，而结构体或枚举不能遵循该协议。class 关键字必须第一个出现在协议的继承列表中，在其他继承的协议之前：
+```swift
+protocol SomeClassOnlyProtocol: class, SomeInheritedProtocol {
+    // 这里是类类型专属协议的定义部分
+}
+```
+在以上例子中，协议 SomeClassOnlyProtocol 只能被类类型遵循。如果尝试让结构体或枚举类型遵循该协议，则会导致编译错误。
+
+###18.3 检查协议一致性
+- is 用来检查实例是否符合某个协议，若符合则返回 true，否则返回 false。
+- as? 返回一个可选值，当实例符合某个协议时，返回类型为协议类型的可选值，否则返回 nil。
+- as! 将实例强制向下转换到某个协议类型，如果强转失败，会引发运行时错误。
+
+###18.4 提供默认实现
+可以通过协议扩展来为协议要求的属性、方法以及下标提供默认的实现。如果遵循协议的类型为这些要求提供了自己的实现，那么这些自定义实现将会替代扩展中的默认实现被使用。
+
+###18.5 为协议扩展添加限制条件
+在扩展协议的时候，可以指定一些限制条件，只有遵循协议的类型满足这些限制条件时，才能获得协议扩展提供的默认实现。这些限制条件写在协议名之后，使用 where 子句来描述，正如Where子句中所描述的。
+```swift
+//可以扩展 CollectionType 协议，但是只适用于集合中的元素遵循了 SomeRepresentable 协议的情况
+extension Collection where Iterator.Element: SomeRepresentable{
+
+    var textualDescription: String {
+        let itemsAsText = self.map { $0.textualDescription}
+        return "[" + itemsAsText.joined(separator: ",") + "]"
+        
+    }
+}
+```
+
+>注意
+如果多个协议扩展都为同一个协议要求提供了默认实现，而遵循协议的类型又同时满足这些协议扩展的限制条件，那么将会使用限制条件最多的那个协议扩展提供的默认实现。
+
+##19. 泛型
+```swift
+func swapTwoValues<U>(_ a: inout U, _ b: inout U){
+
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+```
+泛型函数特征：
+这个函数的泛型版本使用了占位类型名（在这里用字母 T 来表示）来代替实际类型名（例如 Int、String 或 Double）。占位类型名没有指明 T 必须是什么类型，但是它指明了 a 和 b 必须是同一类型 T，无论 T 代表什么类型。只有 swapTwoValues(_:_:) 函数在调用时，才能根据所传入的实际类型决定 T 所代表的类型。
+另外一个不同之处在于这个泛型函数名（swapTwoValues(_:_:)）后面跟着占位类型名（T），并用尖括号括起来（<T>）。这个尖括号告诉 Swift 那个 T 是 swapTwoValues(_:_:) 函数定义内的一个占位类型名，因此 Swift 不会去查找名为 T 的实际类型。
+
+###19.1 类型约束
+你可以在一个类型参数名后面放置一个类名或者协议名，并用冒号进行分隔，来定义类型约束，它们将成为类型参数列表的一部分。对泛型函数添加类型约束的基本语法如下所示（作用于泛型类型时的语法与之相同）：
+```swift
+func someFunction<T: SomeClass, U: SomeProtocol>(someT: T, someU: U) {
+    // 这里是泛型函数的函数体部分
+}
+```
+上面这个函数有两个类型参数。第一个类型参数 T，有一个要求 T 必须是 SomeClass 子类的类型约束；第二个类型参数 U，有一个要求 U 必须符合 SomeProtocol 协议的类型约束。
+
+##20. 关联类型
+定义一个协议时，有的时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型为协议中的某个类型提供了一个占位名（或者说别名），其代表的实际类型在协议被采纳时才会被指定。你可以通过 associatedtype 关键字来指定关联类型。
+
+
+##21. 运算符重载
+```swift
+// 中缀运算符重载
+struct Vector2D {
+    var x = 0.0, y = 0.0
+}
+
+extension Vector2D {
+    static func + (left: Vector2D, right: Vector2D) -> Vector2D {
+        return Vector2D(x: left.x + right.x, y: left.y + right.y)
+    }
+}
+```
+###21.1 前缀和后缀运算符
+```swift
+extension Vector2D{
+
+    static prefix func -(vector: Vector2D) -> Vector2D{
+        return Vector2D (x: -vector.x, y: -vector.y)
+    }
+}
+
+let prefixOperation = -vector
+
+```
+###21.2 等价运算符
+自定义的类和结构体没有对等价运算符进行默认实现，等价运算符通常被称为“相等”运算符（==）与“不等”运算符（!=）。对于自定义类型，Swift 无法判断其是否“相等”，因为“相等”的含义取决于这些自定义类型在你的代码中所扮演的角色。
+
+为了使用等价运算符能对自定义的类型进行判等运算，需要为其提供自定义实现，实现的方法与其它中缀运算符一样：
+```swift
+extension Vector2D{
+
+    static func == (left: Vector2D, right: Vector2D) -> Bool{
+    
+        return (left.x == right.x) && (left.y == right.y)
+    }
+    
+    static func != (left: Vector2D, right: Vector2D) -> Bool{
+        return !(left == right)
+    }
+}
+
+let twoThree = Vector2D(x: 2.0, y: 3.0)
+let anotherTwoThree = Vector2D(x: 2.0, y: 3.0)
+if twoThree == anotherTwoThree {
+    print("These two vectors are equivalent.")
+}
+```
+###21.3 自定义运算符

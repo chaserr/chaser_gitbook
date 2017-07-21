@@ -489,5 +489,12 @@ prefix operator +++
 ```
 
 ##22 表达式
+###22.1 选择器表达式
+选择器表达式
+```swift
+let selectorForPropertyGetter = #selector(getter: SomeClass.property)
+
+```
+当为属性的getter创建选择器时,属性名可以是变量属性或者常量属性的引用。但是当为属性的setter创建选择器时,属性名只可以是对变量属性的引用。
 
 

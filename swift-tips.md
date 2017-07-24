@@ -497,4 +497,49 @@ let selectorForPropertyGetter = #selector(getter: SomeClass.property)
 ```
 当为属性的getter创建选择器时,属性名可以是变量属性或者常量属性的引用。但是当为属性的setter创建选择器时,属性名只可以是对变量属性的引用。
 
+##23. swift中的指针
+###23.1 作为数组使用的参数指针
+在C语言中，数组和指针的联系十分紧密，而Swift允许数组能够作为指针使用，从而与基于数组的C语言API协同工作更加简单。一个固定的数组可以使用一个常量指针直接传递，一个变化的数组可以用&运算符将一个非常量指针传递。就和输入/输出参数指针一样。举例来说：我们可以用Accelerate框架中的vDSP_vadd方法让两个数组a和b相加，并将结果写入第三个数组result。
 
+```swift
+import Accelerate
+
+let a: [Float] = [1,2,3,4]
+let b: [Float] = [0.5,0.25,0.125,0.0625]
+var result: [Float] = [0,0,0,0]
+
+/**
+    第一个参数：数组1
+    第二个参数：数组1中的元素计算方式，1-> 逐个计算，2->以增量2计算，
+            比如：如果填2，那么第二个计算的元素就是 2
+    第三个参数：数组2
+    第四个参数：数组2中的元素计算方式
+    第5个参数：结果数组
+    第6个参数：结果数组的长度
+ */
+vDSP_vadd(a, 1, b, 1, &result, 1, 4)
+
+print(result) // [1.5, 2.25, 3.125, 4.0625]
+
+
+vDSP_vadd(a, 2, b, 1, &result, 1, 4)
+print(result) // [1.5, 3.25, 0.125, 0.0625]
+```
+
+###23.2 用作字符串参数的指针
+C语言中用cont char*指针来作为传递字符串的基本方式。Swift中的String可以被当作一个无限长度UTF-8编码的const char*指针来传递给方法。举例来说：我们可以直接传递一个字符串给一个标准C和POSIX库方法
+```swift
+print(result) // [1.5, 3.25, 0.125, 0.0625]
+
+//puts("Hello from libc")
+let fd = open("/Users/tongxing/scratch.txt", O_WRONLY|O_CREAT, 0o666)
+
+if fd < 0 {
+    perror("could not open /Users/tongxing/scrath.txt")
+}else{
+    let text = "Hello world"
+    write(fd, text, Int(strlen(text)))
+    close(fd)
+    
+}
+```

@@ -52,4 +52,5 @@
   * [OC](错误集/oc.md)
 * [Linux  命令](linux-ming-ling.md)
 * [打包脚本](da-bao-jiao-ben.md)
+  * [exportAppstore](da-bao-jiao-ben/exportappstore.md)
 

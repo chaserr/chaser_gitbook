@@ -61,6 +61,5 @@ fileprivate var str : String!
 
 2. 当图片的宽高过大的时候，SDWebImage一次性加载很多图片会导致内存暴涨，crash,通过设置 SD 的 iamgeCache 的一些限制参数也无用，
 最后解决：对图片的宽高进行裁剪，因为 iOS的 drawRect的画布大小有限制，具体带下未知，但是不超过2048；
-
-
+https://stackoverflow.com/questions/2127995/iphone-image-view-picture-size-limit
 

@@ -55,4 +55,9 @@
 * [Linux  命令](linux-ming-ling.md)
 * [打包脚本](da-bao-jiao-ben.md)
   * [exportAppstore](da-bao-jiao-ben/exportappstore.md)
+* [AWS 服务器配置](aws-fu-wu-qi-pei-zhi.md)
+  * [mysql 篇](aws-fu-wu-qi-pei-zhi/mysql-pian.md)
+  * node.js 环境篇
+  * EC2 实例的创建篇
+  * VPN 配置篇
 

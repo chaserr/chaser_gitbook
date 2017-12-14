@@ -213,4 +213,7 @@ tcp        0      0 0.0.0.0:1723            0.0.0.0:*               LISTEN      
 ![](https://thumbnail0.baidupcs.com/thumbnail/0e26a124fc4fab7ee037ad85d4754165?fid=3072304475-250528-837580907722547&time=1513224000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-icyov5M%2FZmABS34%2FN%2BQBjiNXVtA%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8059562945653346784&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
 说明 VPN 连接成功了
 下次只需要打开`shimo`软件点击连接就 OK 了
-到此就大功告成了
+到此就大功告成了!
+![](https://thumbnail0.baidupcs.com/thumbnail/601a37c3d40f44458f4983216e828f5c?fid=3072304475-250528-218425126467982&time=1513224000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-yxEinOlNGcYhRYw0aQqheFNDg90%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8059753187694771329&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+![](https://thumbnail0.baidupcs.com/thumbnail/24abbdeef1f4423591d07dbf130df756?fid=3072304475-250528-863253141570915&time=1513224000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-prsRmTa%2BlxvKlOFOEHQEFf%2FC%2FXQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8059766227240221952&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+

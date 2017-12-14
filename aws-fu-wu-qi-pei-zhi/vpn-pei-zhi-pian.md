@@ -199,3 +199,17 @@ tcp        0      0 0.0.0.0:1723            0.0.0.0:*               LISTEN      
 `shimo`这个软件有破解版的,附赠下载地址：
 [shimo 破解版下载地址](https://www.waitsun.com/shimo-4-1-5-1.html)
 打开 shimo
+选择 account 添加新账户，选中PPTP/L2TP 协议-> create
+![](https://thumbnail0.baidupcs.com/thumbnail/872bb676987ade0acc0b7a19f12a0615?fid=3072304475-250528-373202769837501&time=1513220400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-a8MwkBpV2KLk0MP1lU1YOZHy6H4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8059442361420792984&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+
+出现远程连接的弹框
+![](https://thumbnail0.baidupcs.com/thumbnail/1dcc516254cd13a97f5931d436c15dd1?fid=3072304475-250528-763006537780133&time=1513220400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XHbIIMph1Bk%2F2dEnBZ%2FkALbnYOw%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8059485978796173029&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+
+- 其中RemoteHost填写的是你之前创建的实例的共有 DNS，一定不能填错了
+- Username:填写你在步骤`###4.3`配置的 vpnname
+- password:填写你在步骤`###4.3`配置的 vpnpassword
+然后 create
+当你看到
+![](https://thumbnail0.baidupcs.com/thumbnail/0e26a124fc4fab7ee037ad85d4754165?fid=3072304475-250528-837580907722547&time=1513224000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-icyov5M%2FZmABS34%2FN%2BQBjiNXVtA%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8059562945653346784&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+说明 VPN 连接成功了
+下次只需要打开`shimo`软件点击连接就 OK 了

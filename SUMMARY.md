@@ -57,7 +57,7 @@
   * [exportAppstore](da-bao-jiao-ben/exportappstore.md)
 * [AWS 服务器配置](aws-fu-wu-qi-pei-zhi.md)
   * [mysql 篇](aws-fu-wu-qi-pei-zhi/mysql-pian.md)
-  * node.js 环境篇
-  * EC2 实例的创建篇
+  * [node.js 环境篇](aws-fu-wu-qi-pei-zhi/nodejs-huan-jing-pian.md)
+  * [EC2 实例的创建篇](aws-fu-wu-qi-pei-zhi/ec2-shi-li-de-chuang-jian-pian.md)
   * VPN 配置篇
 

@@ -178,5 +178,24 @@ sudo iptables -I INPUT -p tcp --dport 1723 -j ACCEPT
 ```ruby
 sysctl -p
 ```
+###4.6. 重启 pptpd 服务
+在终端输入并回车
+```ruby
+sudo /etc/init.d/pptpd restart
+```
+会出现 ok  restarting pptpd：pptpd.servoce
+在终端输入并回车
+```ruby
+sudo netstat -ntpl
+```
+如果出现
+```ruby
+tcp        0      0 0.0.0.0:1723            0.0.0.0:*               LISTEN      11779/pptpd
+```
+说明访问正常
 
-
+##连接 VPN
+在mac 和 iphone 上现在都已经取消了 pptpd 服务，但是可以通过第三方来连接，这里推荐一个软件
+`shimo`这个软件有破解版的,附赠下载地址：
+[shimo 破解版下载地址](https://www.waitsun.com/shimo-4-1-5-1.html)
+打开 shimo

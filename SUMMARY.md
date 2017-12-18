@@ -60,4 +60,5 @@
   * [node.js 环境篇](aws-fu-wu-qi-pei-zhi/nodejs-huan-jing-pian.md)
   * [EC2 实例的创建篇](aws-fu-wu-qi-pei-zhi/ec2-shi-li-de-chuang-jian-pian.md)
   * [VPN 配置篇](aws-fu-wu-qi-pei-zhi/vpn-pei-zhi-pian.md)
+* [Demo](demo.md)
 

@@ -17,6 +17,10 @@
 16. [Pin 作者开源了新项目，一个轻量级的 To-Do iOS 插件。](https://github.com/cyanzhong/TodayMind)
 17. [iOS Dropdown 风格菜单](https://github.com/younatics/YNDropDownMenu)
 18. [iOS SwipeKit，帮你轻松实现滑动展开抽屉效果](https://github.com/SwipeCellKit/SwipeCellKit)
+19. [把 SVG 动画集成到下拉刷新中。](https://github.com/strongself/MRefresh)
+20. [CRPageViewController allows defining a page size by setting width and heights manually. Thus, users will be able to control the placement of pages on the screens in the way which is more suitable for them.](https://github.com/Cleveroad/CRPageViewController)
+21. [一个可滑动的不定宽按钮的 Segment Control，带自动居中，可直接在 Storyboard 中定制 (Wildog)](https://github.com/Wildog/WDScrollableSegmentedControl)
+22. [模仿Airbnb首页过渡动画](https://github.com/newyjp/JPAnimation)
 
 #swift
 1. [仿照微信更多操作，用来分享、网页操作等。你可以使用 YFMoreViewController 只进行分享或者操作网页。](https://github.com/yeziahehe/YFMoreViewController)
@@ -52,6 +56,17 @@
 30. [Swift Tag 输入效果](https://github.com/uber/UBTokenBar)
 31. [理解泛型编程的思想，了解编译期多态的概念](https://boxueio.com/series/protocol-and-generic/episode/189)
 32. [iOS 360° 图片展示组件，酷酷的。](https://github.com/scihant/CTPanoramaView)
+33. [这或许是最好用的iOS消息通知框架了，支持多种效果](https://github.com/imlifengfeng/FFToast)
+34. [Swift 渐变式加载进度条。](https://github.com/DholStudio/DSGradientProgressView)
+35. [基于 iOS10 UIViewPropertyAnimator 创建的 iOS 动画框架](https://github.com/saoudrizwan/Dance)
+36. [ESTabBarController是一个高度自定义的TabBarController组件，更容易的实现改变文字样式、添加动画效果。 ](https://github.com/eggswift/ESTabBarController)
+37. [UIDevice 封装，更方便的获取设备信息，以及仿真设备。](https://github.com/dennisweissmann/DeviceKit)
+38. [让 Swift Cell 动画变得更容易实现。](https://github.com/Mononster/Swift-CellAnimation)
+39. [一款美美的自定义 SegementedControl，学习学习。](https://github.com/IvanVorobei/SegmentedControl)
+40. [iOS链式动画库、Spring动画，CAMediaTimingFunction扩展](https://github.com/devedbox/AXAnimationChain)
+41. [漂亮的图片滤镜效果](https://github.com/makomori/Sharaku)
+42. [又一个全新的 iOS 动画引擎，Demo 和使用场景很不错。](https://github.com/lkzhao/Hero)
+43. [增强 UITextView 组件，支持文本属性添加](https://github.com/evermeer/AttributedTextView)
 #iOS 逆向工程
 1. [iOS逆向工程之插件开发](http://www.imlifengfeng.com/blog/?p=677)
 2. [iOS逆向工程之fishhook](http://www.imlifengfeng.com/blog/?p=692)
@@ -60,17 +75,27 @@
 
 #工具
 1. [一款可以查看模拟器和真机的当前的沙盒路径的应用，开源](https://github.com/luckytianyiyan/TySimulator)
-
+2. [Realm 开源的 Swift Lint 工具](https://github.com/realm/SwiftLint)
 
 #博客地址
 1. [贝塞尔曲线 高级教程](https://pomax.github.io/bezierinfo/zh-CN/)
 2. [面试算法实践与国外大厂习题指南](https://zhuanlan.zhihu.com/p/25719965)
 3. [iOS线程同步与线程安全，一篇讲的非常详细的文章](http://www.imlifengfeng.com/blog/?p=582)
 4. [https://github.com/younatics/YNDropDownMenu](http://www.jianshu.com/p/79a140027136)
+5. [超级详细的iOS Quartz2D详解，看完就可以熟练自定义控件了](http://www.imlifengfeng.com/blog/?p=514)
+6. [iOS Runtime之七：拾遗](http://www.imlifengfeng.com/blog/?p=404)
+7. [全网最详细的iOS Category详解](http://www.imlifengfeng.com/blog/?p=474)
+8. [全网最详细的iOS Block教程 ](http://www.imlifengfeng.com/blog/?p=457)
 #Node
 
 #前端
 1. [CSS Tips 合集](https://github.com/AllThingsSmitty/css-protips)
-
+2. [微信小程序大全](http://weapp.masterstudio.tech/demo/demo_photo_wall.html)
 #linux
 1. [MAC 设置环境变量path的几种方法](http://www.flakor.cn/2014-09-14-714.html)
+
+
+#Git
+1. [Git进阶用法，主要是rebase高级用法](http://way.oschina.io/2016/12/15/notes/GitAdvance/)
+
+

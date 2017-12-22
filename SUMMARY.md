@@ -72,4 +72,5 @@
   * [图片浏览器](demo/tu-pian-liu-lan-qi.md)
   * [Sketch 教程](demo/sketch-jiao-cheng.md)
   * [绘图](demo/hui-tu.md)
+  * [PageController](demo/pagecontroller.md)
 

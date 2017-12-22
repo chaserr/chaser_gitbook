@@ -1,3 +1,4 @@
+[Linux 命令大全提供 500 多个 Linux 命令搜索](http://wangchujiang.com/linux-command/)
 ##chmod 
 > 修改某个文件的读写权限
 

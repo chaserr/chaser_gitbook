@@ -21,6 +21,11 @@
 20. [CRPageViewController allows defining a page size by setting width and heights manually. Thus, users will be able to control the placement of pages on the screens in the way which is more suitable for them.](https://github.com/Cleveroad/CRPageViewController)
 21. [一个可滑动的不定宽按钮的 Segment Control，带自动居中，可直接在 Storyboard 中定制 (Wildog)](https://github.com/Wildog/WDScrollableSegmentedControl)
 22. [模仿Airbnb首页过渡动画](https://github.com/newyjp/JPAnimation)
+23. [iOS 展示复杂数学公式的裤子](https://github.com/kostub/iosMath)
+24. [类似 Apple music 弹起卡片效果](https://github.com/jobandtalent/CardStackController)
+25. [简单轻量的一个分割线组件](https://github.com/Marcocanc/NELineLabel)
+26. [自动滚动Label](https://github.com/cbess/AutoScrollLabel)
+27. [iOS 数字滚动 Label](https://github.com/codewise/AnimatingLabel)
 
 #swift
 1. [仿照微信更多操作，用来分享、网页操作等。你可以使用 YFMoreViewController 只进行分享或者操作网页。](https://github.com/yeziahehe/YFMoreViewController)
@@ -67,6 +72,11 @@
 41. [漂亮的图片滤镜效果](https://github.com/makomori/Sharaku)
 42. [又一个全新的 iOS 动画引擎，Demo 和使用场景很不错。](https://github.com/lkzhao/Hero)
 43. [增强 UITextView 组件，支持文本属性添加](https://github.com/evermeer/AttributedTextView)
+44. [简洁方便的 iOS 表单生成器 ](https://github.com/xmartlabs/Eureka)
+45. [把 元编程 带到 Swift 里来！](https://github.com/krzysztofzablocki/Sourcery)
+46. [365 种 Native Swift 函数扩展，大幅提高生产力。](https://github.com/SwifterSwift/SwifterSwift)
+47. [iOS 权限认证辅助库](https://github.com/ennioma/arek)
+48. [iOS 信用卡输入效果](https://github.com/orazz/CreditCardForm-iOS)
 #iOS 逆向工程
 1. [iOS逆向工程之插件开发](http://www.imlifengfeng.com/blog/?p=677)
 2. [iOS逆向工程之fishhook](http://www.imlifengfeng.com/blog/?p=692)
@@ -76,7 +86,8 @@
 #工具
 1. [一款可以查看模拟器和真机的当前的沙盒路径的应用，开源](https://github.com/luckytianyiyan/TySimulator)
 2. [Realm 开源的 Swift Lint 工具](https://github.com/realm/SwiftLint)
-
+3. [致力于提高项目 UI 开发效率的解决方案](http://qmuiteam.com/ios/page/start.html)
+4. [一个指令，把一个网址，变成一个 Mac App](https://github.com/jiahaog/nativefier)
 #博客地址
 1. [贝塞尔曲线 高级教程](https://pomax.github.io/bezierinfo/zh-CN/)
 2. [面试算法实践与国外大厂习题指南](https://zhuanlan.zhihu.com/p/25719965)
@@ -86,11 +97,17 @@
 6. [iOS Runtime之七：拾遗](http://www.imlifengfeng.com/blog/?p=404)
 7. [全网最详细的iOS Category详解](http://www.imlifengfeng.com/blog/?p=474)
 8. [全网最详细的iOS Block教程 ](http://www.imlifengfeng.com/blog/?p=457)
+9. [iOS难点深复制浅复制非常详细的讲解，绝对干货](http://www.imlifengfeng.com/blog/?p=21)
+10. [对绝大多数开发者来说，尽管我们每天都要与编译器打交道，然而实际上编译器对我们来说仍然像一个神秘的黑盒。在本次 try! Swift 的讲演中，Samuel Giddins 从头搭建了一个全新的微型编译器，用来编译他自制的一门编程语言，从而借此去学习编译器的基本工作机制。他还讲述了 Swift 是如何为复杂问题（例如语义解析、词法分析和代码生成）提供优雅的解决方案的。最后，我们将实现一门全新的编程语言，并完成对它的编译工作！](https://academy.realm.io/cn/posts/tryswift-samuel-giddins-building-tiny-compiler-swift-ios/)
+11. [对KVO机制的分析](http://www.jianshu.com/p/348e98825df0)
+12. [在 Instagram 团队重写他们全新的 iOS Feed 的过程中，他们积累了大量的经验，遇到的坑无疑已经超出了他们的预料，比如说集合视图、差异化 (Diffing) 以及冗长代码所带来的危险之处。在本次 try! Swift 讲演之中，Ryan Nystrom 向我们分享了如何才能进行一次成功的重构，并且向我们介绍了 Instagram 的一个很赞的开源组件：IGListKit。](https://academy.realm.io/cn/posts/tryswift-ryan-nystrom-refactoring-at-scale-lessons-learned-rewriting-instagram-feed/)
+
 #Node
 
 #前端
 1. [CSS Tips 合集](https://github.com/AllThingsSmitty/css-protips)
 2. [微信小程序大全](http://weapp.masterstudio.tech/demo/demo_photo_wall.html)
+3. [CSS 实现的 Loading 效果]()
 #linux
 1. [MAC 设置环境变量path的几种方法](http://www.flakor.cn/2014-09-14-714.html)
 

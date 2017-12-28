@@ -7,6 +7,7 @@
   * [AV Foundation  名词](av-foundation-learning/av-foundation-ming-ci.md)
 * [逆向工程](ni-xiang-gong-cheng.md)
   * [Hook ObjC的不定参数方法](hook-objcde-bu-ding-can-shu-fang-fa.md)
+  * [应用重签名](ying-yong-zhong-qian-ming.md)
 * [1. iOS知识小结](ioszhi_shi_xiao_jie.md)
   * [1.1 OC基础知识](ocji_chu_zhi_shi.md)
   * [UI小技巧开发](uixiao_ji_qiao_kai_fa.md)

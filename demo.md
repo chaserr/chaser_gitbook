@@ -26,7 +26,7 @@
 25. [简单轻量的一个分割线组件](https://github.com/Marcocanc/NELineLabel)
 26. [自动滚动Label](https://github.com/cbess/AutoScrollLabel)
 27. [iOS 数字滚动 Label](https://github.com/codewise/AnimatingLabel)
-
+18. [用 TextKit 显示复杂数学公式](https://github.com/kishikawakatsumi/TextKitExamples)
 #swift
 1. [仿照微信更多操作，用来分享、网页操作等。你可以使用 YFMoreViewController 只进行分享或者操作网页。](https://github.com/yeziahehe/YFMoreViewController)
 2. [仿苹果数字密码解锁](https://github.com/Ryasnoy/AppLocker)

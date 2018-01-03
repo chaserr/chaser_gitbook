@@ -75,5 +75,7 @@
   * [绘图](demo/hui-tu.md)
   * [PageController](demo/pagecontroller.md)
   * [iMessage](demo/imessage.md)
+  * [Textview/Textfield](demo/textviewtextfield.md)
+  * [动画](demo/dong-hua.md)
 * [Node](node.md)
 

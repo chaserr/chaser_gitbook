@@ -4,6 +4,13 @@
 cryptid == 0 则代表以及将 ipa 解密(砸壳)了
 
 ```ruby
+
+# `grep -B 2 crypt` linux命令
+# grep是一个搜索程序,它只能搜索匹配一个正则表达式的一行的存在性
+#  找出crypt中带有keyword的行，输出中除显示该行外，还显示之前的2行(Before 2)。其中，数字可以变。
+# crypt加密方法
+
+
 ➜  Desktop otool -l /Users/tongxing/Desktop/yueyuTest/kuwo/Payload/KWPlayer.app/KWPlayer  | grep -B 2 crypt
           cmd LC_ENCRYPTION_INFO
       cmdsize 20

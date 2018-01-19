@@ -14,6 +14,5 @@
   "dependencies": {
     "react": "16.0.0-beta.5",
     "react-native": "0.49.5",
-    "watchman": "^1.0.0"
   },
 ```

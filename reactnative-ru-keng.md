@@ -26,3 +26,15 @@ sudo make install
     "react-native": "0.49.5",
   },
 ```
+
+4. 警告`BatchedBridge is deprecated`
+在 `podfile` 里将`react` 的 `BatchedBridge` 替换成 `CxxBridge`
+
+
+
+
+
+
+#问题
+
+1. 如何调试

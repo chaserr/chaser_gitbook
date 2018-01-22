@@ -1,4 +1,14 @@
 1. watchman 问题
+使用下面的方法进行手动安装就可以
+```js
+git clone https://github.com/facebook/watchman.git  
+cd watchman  
+git checkout v4.9.0  # the latest stable release  
+./autogen.sh  
+./configure  
+make  
+sudo make install  
+```
 2. `RCTReconnectingWebSocket.h`文件的`#import <fishhook/fishhook.h>` 显示`error: 'fishhook/fishhook.h' file not found`
 
 解决：在`package.json`文件中添加如下代码：

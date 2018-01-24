@@ -1,3 +1,13 @@
+#1. swift 常用库类库介绍, 轮子
+http://blog.csdn.net/qq_28379951/article/details/54922961
+http://blog.csdn.net/halibobo1998/article/details/50637144
+
+#2. es6语法入门
+http://es6.ruanyifeng.com/#docs/let
+#3. RN常用组件
+https://www.jianshu.com/p/53ff78168acc
+
+
 # OC
 
 1. [一个炫酷的图片浏览器](https://github.com/cbangchen/CBPic2ker)\

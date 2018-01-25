@@ -36,6 +36,21 @@ sudo make install
 这是关于设备的横竖屏适配的问题
 解决方案：https://github.com/yamill/react-native-orientation/issues/43
 
+###错误6 使用自定义字体的时候出现失败
+这里以华康海报体 w12 为例：
+解决方案：
+0x1. 先把导入的字体资源改为 fontName:DFPHaiBaoW12
+0x2. 把 xcode 里 plist 文件里的字体也改为DFPHaiBaoW12
+0x3. 设置 js 里的样式`fontFamily`
+```js
+btn: {
+    color: "white",
+    fontSize: 18,
+    fontFamily: 'DFPHaiBaoW12'
+  }
+```
+> 字体的fontFamily可以把下载的 ttf文件直接双击安装，然后在系统自带的字体册里看到关于这个字体的一切信息
+
 
 
 #流程

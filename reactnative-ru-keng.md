@@ -32,6 +32,10 @@ sudo make install
 
 
 
+###错误5 `undefined is not an object (evaluating 'Orientation.lockToPortrait')`
+这是关于设备的横竖屏适配的问题
+解决方案：https://github.com/yamill/react-native-orientation/issues/43
+
 
 
 #流程

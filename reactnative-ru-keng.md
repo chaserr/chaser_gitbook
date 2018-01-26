@@ -52,6 +52,33 @@ btn: {
 > 字体的fontFamily可以把下载的 ttf文件直接双击安装，然后在系统自带的字体册里看到关于这个字体的一切信息
 
 
+###错误7 `Native module cannot be null`
+类似问题：https://github.com/react-navigation/react-navigation/issues/460
+
+错误场景：外部Xcode导入 reactNative.而不是运行 react自带的 ios 项目
+错误描述：当引入`react-navigation`并将其作为出口register 的时候会报错：Native module cannot be null
+错误原因：react-navigation会生成一个原生的RCTLinkingIOS库，外部引用的需要手动导入，内部的自动链接
+解决方法：在 podfile 中加入：`RCTLinkingIOS`
+```js
+pod 'React', :path => '../../MathsGameRN/node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTActionSheet',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTPushNotification',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+    'CxxBridge',
+    'RCTLinkingIOS'
+    ]
+```
+
+
+
+
 
 #流程
 1）组件导入区： 所有用到的组件都需要事先进行导入，包括样式也需要进行导入
@@ -63,3 +90,4 @@ btn: {
 #问题
 
 1. 如何调试
+2. 如果使用 native 的导航，那么原生可不可以拿到 native 的一些页面来做某些事情或者说，还是用原生的导航，然后在 native 中注册多个入口来实现

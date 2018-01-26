@@ -76,7 +76,7 @@ pod 'React', :path => '../../MathsGameRN/node_modules/react-native', :subspecs =
     ]
 ```
 
-
+###错误8 swift 通过 RCTRootView 的  initPor传值不被识别，OC 可以
 
 
 

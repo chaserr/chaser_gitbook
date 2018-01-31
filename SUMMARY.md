@@ -6,6 +6,7 @@
 * [ReactNative 入坑](reactnative-ru-keng.md)
   * [适配](reactnative-ru-keng/shi-pei.md)
   * [解惑](reactnative-ru-keng/jie-huo.md)
+  * [组件的生命周期](reactnative-ru-keng/zu-jian-de-sheng-ming-zhou-qi.md)
 * [AV Foundation learning](av-foundation-learning.md)
   * [AV Foundation  名词](av-foundation-learning/av-foundation-ming-ci.md)
 * [逆向工程](ni-xiang-gong-cheng.md)

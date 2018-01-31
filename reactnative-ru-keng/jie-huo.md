@@ -40,3 +40,16 @@ class Label extends React.Component{
 
 2. **state属性：组件用来改变自己状态的属性，通常使用setState({key:value})来改变属性值，不能使用this.state.xxx来直接改变（类似于 OC 中的 get 方法），setState({key:value})方法会触发界面刷新。**
 > setState({key:value})类似于 OC 中的 set 方法，this.state.xxx类似于 OC 中的 get 方法
+
+
+
+3. 获取某个控件实例，通过添加 `ref:xxx`标记，然后再通过`this.refs.xxx`获取
+
+4. 如果某个方法中使用到了 this,那么这个方法一定要绑定 this，否则会报错：**`reactnative 'this.xxx' is undefined)`**
+
+```js
+//es5 在constructor(构造函数)方法里绑定
+this.xxx = this.xxx.bind(this);
+//使用ES6新特性箭头函数=>()
+
+```

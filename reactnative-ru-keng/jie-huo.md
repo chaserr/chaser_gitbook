@@ -1,3 +1,4 @@
+
 ###1. 在网上总是看到 React.createClass，但是官方总是 extends Component
 
 那么React.createClass和extends Component的区别到底是什么

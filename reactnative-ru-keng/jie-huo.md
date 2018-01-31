@@ -1,4 +1,4 @@
-1. 在网上总是看到 React.createClass，但是官方总是 extends Component
+###1. 在网上总是看到 React.createClass，但是官方总是 extends Component
 
 那么React.createClass和extends Component的区别到底是什么
 
@@ -18,3 +18,25 @@ React.createClass和extends Component的区别主要在于：
 
 答案：
 https://segmentfault.com/a/1190000005863630
+
+###2. props与state
+ 1. **props属性：组件可以定义初始值，自己不可更改props属性值，只允许从父组件中传递过来**
+
+```js
+// 父组件
+class MainComponent extends React.Component{
+    render(){
+        return(<Label name="标题栏">);
+    }
+}
+
+// 子组件
+class Label extends React.Component{
+    render(){
+        return(<Text>{this.props.name}</Text>);
+    }
+}
+```
+
+2. **state属性：组件用来改变自己状态的属性，通常使用setState({key:value})来改变属性值，不能使用this.state.xxx来直接改变（类似于 OC 中的 get 方法），setState({key:value})方法会触发界面刷新。**
+> setState({key:value})类似于 OC 中的 set 方法，this.state.xxx类似于 OC 中的 get 方法

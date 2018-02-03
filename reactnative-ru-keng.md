@@ -82,6 +82,16 @@ pod 'React', :path => '../../MathsGameRN/node_modules/react-native', :subspecs =
 
 ###错误8 swift 通过 RCTRootView 的  initPor传值不被识别，OC 可以
 
+###错误9 Undefined is not an object(evaluating ‘_react2.PropTypes.func’)
+导入 propTypes 错误
+正确方法：
+```js
+//import PropTypes from 'react'; wrong
+
+import PropTypes from 'prop-types'; //right
+
+```
+
 
 
 #流程

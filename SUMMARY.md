@@ -13,6 +13,8 @@
   * [set，get 方法](reactnative-ru-keng/setget-fang-fa.md)
   * [state， props , 和成员变量](reactnative-ru-keng/state-props-he-cheng-yuan-bian-liang.md)
   * [this](reactnative-ru-keng/this.md)
+  * [React native方法，常量和组件的导入和导出](reactnative-ru-keng/react-nativefang-fa-ff0c-chang-liang-he-zu-jian-de-dao-ru-he-dao-chu.md)
+  * [realm 集成](reactnative-ru-keng/realm-ji-cheng.md)
 * [AV Foundation learning](av-foundation-learning.md)
   * [AV Foundation  名词](av-foundation-learning/av-foundation-ming-ci.md)
 * [逆向工程](ni-xiang-gong-cheng.md)

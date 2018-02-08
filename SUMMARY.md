@@ -15,6 +15,7 @@
   * [this](reactnative-ru-keng/this.md)
   * [React native方法，常量和组件的导入和导出](reactnative-ru-keng/react-nativefang-fa-ff0c-chang-liang-he-zu-jian-de-dao-ru-he-dao-chu.md)
   * [realm 集成](reactnative-ru-keng/realm-ji-cheng.md)
+  * [xcode 打包](reactnative-ru-keng/xcode-da-bao.md)
 * [AV Foundation learning](av-foundation-learning.md)
   * [AV Foundation  名词](av-foundation-learning/av-foundation-ming-ci.md)
 * [逆向工程](ni-xiang-gong-cheng.md)

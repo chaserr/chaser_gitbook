@@ -41,6 +41,7 @@ sudo make install
 解决方案：https://github.com/yamill/react-native-orientation/issues/43
 
 ###错误6 使用自定义字体的时候出现失败
+
 这里以华康海报体 w12 为例：
 解决方案：
 0x1. 先把导入的字体资源改为 fontName:DFPHaiBaoW12
@@ -54,6 +55,8 @@ btn: {
   }
 ```
 > 字体的fontFamily可以把下载的 ttf文件直接双击安装，然后在系统自带的字体册里看到关于这个字体的一切信息
+>https://github.com/forJrking/FontZip这是一个字体提取器，用来瘦身项目
+
 
 
 ###错误7 `Native module cannot be null`

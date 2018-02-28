@@ -56,7 +56,7 @@ btn: {
 ```
 > 字体的fontFamily可以把下载的 ttf文件直接双击安装，然后在系统自带的字体册里看到关于这个字体的一切信息
 >https://github.com/forJrking/FontZip这是一个字体提取器，用来瘦身项目
-
+> http://fontstore.baidu.com/static/editor/index.html
 
 
 ###错误7 `Native module cannot be null`

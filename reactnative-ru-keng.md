@@ -2,8 +2,8 @@ http://bbs.reactnative.cn/topic/15/react-react-native-%E7%9A%84es5-es6%E5%86%99%
 https://github.com/zhengweikeng/blog/blob/master/posts/2016/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%ADthis%E7%9A%84%E7%94%A8%E6%B3%95.md
 
 
-1. watchman 问题
-使用下面的方法进行手动安装就可以
+1. <span id="watchman">watchman 问题
+使用下面的方法进行手动安装就可以</span>
 ```js
 git clone https://github.com/facebook/watchman.git  
 cd watchman  
@@ -108,3 +108,44 @@ import PropTypes from 'prop-types'; //right
 
 1. 如何调试
 2. 如果使用 native 的导航，那么原生可不可以拿到 native 的一些页面来做某些事情或者说，还是用原生的导航，然后在 native 中注册多个入口来实现
+
+
+
+&emsp
+&emsp
+---------------------
+#入门姿势
+#####1. 环境的安装和配置
+
+* node必备
+* `react-native-cli` 用于执行创建，初始化，更新项目，运行打包等任务 （全局安装）
+* `Watchman`  [安装出现的问题](#watchman)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

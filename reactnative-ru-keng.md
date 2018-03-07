@@ -97,13 +97,6 @@ import PropTypes from 'prop-types'; //right
 
 
 
-#流程
-1）组件导入区： 所有用到的组件都需要事先进行导入，包括样式也需要进行导入
-2）核心代码区：所有逻辑代码编写的地方
-3）组件样式区：render() 方法中用到的组件的样式，可以集中在这里编写
-4）注册启动组件：组件只有注册后才能运行。这里用到的 AppRegistry 也需要在组件导入区进行导入
-
-
 #问题
 
 1. 如何调试
@@ -127,6 +120,20 @@ import PropTypes from 'prop-types'; //right
 > 名称（**项目的入口**），版本，运行脚本，第三方的依赖库（开发依赖和生产环境依赖），类似于 podfile 文件
 2. index.js 项目入口
 > 也可以在配置文件中指定入口，AppRegistry 是运行所有 React Native 应用程序的 JS 入口点。应用程序跟组件需要通过 AppRegistry.registerComponent 来注册它们自身，然后本地系统就可以加载应用程序的包，再然后当 AppRegistry.runApplication准备就绪后就可以真正的运行该应用程序了。
+
+
+reactnative中的组件相当于 MVC 中的 V
+
+
+#####3 一个组件的流程
+1）组件导入区： 所有用到的组件都需要事先进行导入，包括样式也需要进行导入
+2）核心代码区：所有逻辑代码编写的地方
+3）组件样式区：render() 方法中用到的组件的样式，可以集中在这里编写
+4）注册启动组件：组件只有注册后才能运行。这里用到的 AppRegistry 也需要在组件导入区进行导入
+
+#####4 一个组件的生命周期
+![](/assets/3-3-component-lifecycle.jpg)
+
 
 
 

@@ -121,6 +121,15 @@ import PropTypes from 'prop-types'; //right
 * `react-native-cli` 用于执行创建，初始化，更新项目，运行打包等任务 （全局安装）
 * `Watchman`  [安装出现的问题](#watchman)
 
+#####2. 项目的配置
+1. [package.json 项目的配置
+](https://www.cnblogs.com/zhangmingcheng/p/7119740.html)
+> 名称（**项目的入口**），版本，运行脚本，第三方的依赖库（开发依赖和生产环境依赖），类似于 podfile 文件
+2. index.js 项目入口
+> 也可以在配置文件中指定入口，AppRegistry 是运行所有 React Native 应用程序的 JS 入口点。应用程序跟组件需要通过 AppRegistry.registerComponent 来注册它们自身，然后本地系统就可以加载应用程序的包，再然后当 AppRegistry.runApplication准备就绪后就可以真正的运行该应用程序了。
+
+
+
 
 
 

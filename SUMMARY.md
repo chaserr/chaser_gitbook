@@ -99,4 +99,6 @@
 * [Node](node.md)
 * [正则表达式](zheng-ze-biao-da-shi.md)
   * [e.g.1](zheng-ze-biao-da-shi/eg1.md)
+* [读书心得](du-shu-xin-de.md)
+  * [swift函数式编程](du-shu-xin-de/swifthan-shu-shi-bian-cheng.md)
 

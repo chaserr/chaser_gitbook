@@ -55,11 +55,15 @@
   * [Swift 集合类型之迭代器](swift-ji-he-lei-xing-zhi-die-dai-qi.md)
   * [Swift4 new](swift4-new.md)
   * [RxSwift](rxswift.md)
+    * [Observables](rxswift/observables.md)
+    * [Subject](rxswift/subject.md)
+    *  Combination Operators
 * [oc\_消息传递机制](oc消息传递机制.md)
 * [设计模式](设计模式.md)
   * [享元模式](享元模式.md)
   * [原型模式](原型模式.md)
   * [模板模式](模板模式.md)
+  * [策略者模式](ce-lve-zhe-mo-shi.md)
 * [面试经](面试经.md)
   * [算法](算法.md)
 * [AsyncDisplayKit](asyncdisplaykit.md)
@@ -101,4 +105,6 @@
   * [e.g.1](zheng-ze-biao-da-shi/eg1.md)
 * [读书心得](du-shu-xin-de.md)
   * [swift函数式编程](du-shu-xin-de/swifthan-shu-shi-bian-cheng.md)
+* [UML](uml.md)
+  * [UML  & iOS](uml/uml-and-ios.md)
 

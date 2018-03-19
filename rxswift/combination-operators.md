@@ -75,19 +75,19 @@ B 2
 当一个项目由两个Observables发射时，通过一个指定的功能将每个Observable观察到的最新项目组合起来，并根据该功能的结果发射事件。[更多详情](http://reactivex.io/documentation/operators/combinelatest.html)
 ```swift
 let subject1 = PublishSubject<String>()
-        let subject2 = PublishSubject<String>()
+let subject2 = PublishSubject<String>()
         
-        Observable.combineLatest(subject1, subject2) { (string1, string2) in
-            "\(string1) -- \(string2)"
-        }.subscribe(onNext: {
-            print($0)
-        }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
+Observable.combineLatest(subject1, subject2) { (string1, string2) in
+       "\(string1) -- \(string2)"
+  }.subscribe(onNext: {
+    print($0)
+  }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
         
-        subject1.onNext("A")
-        subject2.onNext("1")
-        subject2.onNext("2")
-        subject1.onNext("B")
-        subject1.onNext("C")
+  subject1.onNext("A")
+  subject2.onNext("1")
+  subject2.onNext("2")
+  subject1.onNext("B")
+  subject1.onNext("C")
 ```
 输出结果
 ```swift

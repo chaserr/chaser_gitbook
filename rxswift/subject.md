@@ -131,10 +131,10 @@ Variable是BehaviorSubject的一个封装，同样具备了缓存最新值和提
 在订阅Variable的时候，我们无法直接调用subscribe方法，需要先调用asObservable()方法。
 ```swift
 let variable = Variable<Int>(1)
-        variable.asObservable().subscribe { (event) in
-            print("Event:\(event)")
-        }
-        variable.value = 2
+variable.asObservable().subscribe { (event) in
+    print("Event:\(event)")
+}
+variable.value = 2
 ```
 上述打印结果：
 ```swift

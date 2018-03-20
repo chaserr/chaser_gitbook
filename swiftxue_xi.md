@@ -1,4 +1,8 @@
 # Swift Blog
+##类型安全
+由于 Swift 是类型安全的，所以它会在编译你的代码时进行类型检查(type checks)，并把不匹配的类型标记为错误。这可以让你在开发的时候尽早发现并修复错误。
+
+
 ### To learn a little a day
 
 ## static和class

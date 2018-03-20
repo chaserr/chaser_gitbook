@@ -51,6 +51,7 @@
     * [Swift 关键字](swift-关键字.md)
     * [Swift标准协议](swift标准协议.md)
     * [CustomStringConvertible](swift标准协议/customstringconvertible.md)
+  * [String](string.md)
   * [Swift base](swift-base.md)
   * [Swift 集合类型之迭代器](swift-ji-he-lei-xing-zhi-die-dai-qi.md)
   * [Swift4 new](swift4-new.md)
@@ -64,7 +65,7 @@
     * [Connectable Operators](rxswift/connectable-operators.md)
     * [Error Handing Operators](rxswift/error-handing-operators.md)
     * [RxSwift 中那些难以理解的概念](rxswift/rxswift-zhong-na-xie-nan-yi-li-jie-de-gai-nian.md)
-    * 坑
+    * [坑](rxswift/keng.md)
 * [oc\_消息传递机制](oc消息传递机制.md)
 * [设计模式](设计模式.md)
   * [享元模式](享元模式.md)

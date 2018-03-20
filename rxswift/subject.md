@@ -36,14 +36,14 @@ let subject = PublishSubject<Int>()
         }
         
         
-        let reveseSubject = Observable<Int>.create { (observer) -> Disposable in
-            observer.onNext(1)
-            observer.onNext(2)
-            observer.onCompleted()
-            return Disposables.create()
-        }
+let reveseSubject = Observable<Int>.create { (observer) -> Disposable in
+    observer.onNext(1)
+    observer.onNext(2)
+    observer.onCompleted(
+    return Disposables.create()
+ }
 
-        reveseSubject.subscribe(subject)
+reveseSubject.subscribe(subject)
 ```
 subject订阅了reveseSubject，并将结果转发给了Observer。
 

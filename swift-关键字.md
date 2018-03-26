@@ -108,3 +108,6 @@ func evaluate(_ expression: ArithmeticExpression) -> Int {
 
 print(evaluate(product))
 ```
+
+
+[Swift Pointer 使用指南](https://www.jianshu.com/p/8217bf3444a8)

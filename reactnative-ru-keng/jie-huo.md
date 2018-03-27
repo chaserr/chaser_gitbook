@@ -1,5 +1,5 @@
 
-###1. 在网上总是看到 React.createClass，但是官方总是 extends Component
+### 1. 在网上总是看到 React.createClass，但是官方总是 extends Component
 
 那么React.createClass和extends Component的区别到底是什么
 
@@ -20,7 +20,7 @@ React.createClass和extends Component的区别主要在于：
 答案：
 https://segmentfault.com/a/1190000005863630
 
-###2. props与state
+### 2. props与state
  1. **props属性：组件可以定义初始值，自己不可更改props属性值，只允许从父组件中传递过来**
 
 ```js

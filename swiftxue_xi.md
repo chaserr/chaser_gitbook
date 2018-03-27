@@ -1,5 +1,5 @@
 # Swift Blog
-##any和 anyobject
+## any和 anyobject
 AnyObject 可以代表任何 class 类型的实例
 Any 可以表示任意类型，甚至包括方法 (func) 类型
 ：

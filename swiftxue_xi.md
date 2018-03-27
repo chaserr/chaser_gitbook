@@ -1,4 +1,11 @@
 # Swift Blog
+##any和 anyobject
+AnyObject 可以代表任何 class 类型的实例
+Any 可以表示任意类型，甚至包括方法 (func) 类型
+：
+AnyObject是Any的子集
+所有用class关键字定义的对象就是AnyObject
+所有不是用class关键字定义的对象就不是AnyObject,而是Any
 ##类型安全
 由于 Swift 是类型安全的，所以它会在编译你的代码时进行类型检查(type checks)，并把不匹配的类型标记为错误。这可以让你在开发的时候尽早发现并修复错误。
 

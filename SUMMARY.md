@@ -117,4 +117,6 @@
   * [swift函数式编程](du-shu-xin-de/swifthan-shu-shi-bian-cheng.md)
 * [UML](uml.md)
   * [UML  & iOS](uml/uml-and-ios.md)
+* [Git](git.md)
+  * [command line](git/command-line.md)
 

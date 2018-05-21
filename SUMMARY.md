@@ -119,4 +119,5 @@
   * [UML  & iOS](uml/uml-and-ios.md)
 * [Git](git.md)
   * [command line](git/command-line.md)
+* [2018 bug事故](2018-bugshi-gu.md)
 

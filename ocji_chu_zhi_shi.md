@@ -1,6 +1,7 @@
 # OC基础知识
 
 
+
 ## self.property和_property的区别
 假如类classA有一个属性name.
 关于那么关于在classA的init方法里使用`self.name`和`_name`的区别
@@ -108,4 +109,14 @@ eg:
     return self;
 }
 
+```
+
+
+建议POST请求参数字典的写法,这样比较装逼~
+```c
+// NSDictionaryOfVariableBindings这个宏生成一个字典,这个宏可以生成一个变量名到变量值映射的Dictionary,比如:
+NSNumber * packId=@(2);
+NSNumber *userId=@(22);
+NSNumber *proxyType=@(2);
+NSDictionary *param=NSDictionaryOfVariableBindings(packId,userId,proxyType);
 ```

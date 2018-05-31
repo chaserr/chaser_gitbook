@@ -117,9 +117,11 @@
   * [e.g.1](zheng-ze-biao-da-shi/eg1.md)
 * [读书心得](du-shu-xin-de.md)
   * [swift函数式编程](du-shu-xin-de/swifthan-shu-shi-bian-cheng.md)
+  * [CoreData 应用开发实践指南](du-shu-xin-de/coredata-ying-yong-kai-fa-shi-jian-zhi-nan.md)
 * [UML](uml.md)
   * [UML  & iOS](uml/uml-and-ios.md)
 * [Git](git.md)
   * [command line](git/command-line.md)
 * [2018 bug事故](2018-bugshi-gu.md)
+* [团队规范](tuan-dui-gui-fan.md)
 

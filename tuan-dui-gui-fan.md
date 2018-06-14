@@ -7,9 +7,7 @@ https://github.com/mapbox/XcodeClangFormat
 2. 自定义。clang-format文件规则
 https://www.cnblogs.com/PaulpauL/p/5929753.html 中英文参照
 
-2018.6.13
-项目pod化还是carthage化讨论
-
+##### 2018.6.13  项目pod化还是carthage化讨论
 carthage化问题：二（进制，crash没有源码）
 Q:遇到错误无法跟进修改
 A:如果拿到百度，高德sdk等二进制库，出现错误了怎么处理，那么carthage化后就该怎么处理（找到这个库的维护者）

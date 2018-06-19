@@ -123,3 +123,5 @@ NSDictionary *param=NSDictionaryOfVariableBindings(packId,userId,proxyType);
 
 子类修改父类私有变量和方法
 http://www.iosfly.com/2014/05/14/SubClass-modify-SupClass-Property-Protocol/
+
+

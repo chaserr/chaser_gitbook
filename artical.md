@@ -2,6 +2,8 @@
 ![](/assets/galshir-todo-list-swipe.gif)
 
 最近利用闲暇在研究上面的这个动画，因为本身对动画没有太深入的研究。
+该动画是来自一个设计师的设计作品：https://dribbble.com/shots/3959132-Todo-List-Swipe-To-Check
+觉得很nice
 
 在研究这个动画的过程中涉及到了UIBezierPath，CAKeyframeAnimation，CAShapeLayer，CATransaction等系统类
 

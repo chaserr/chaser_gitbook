@@ -16,7 +16,7 @@ The relative location at which to begin stroking the path. Animatable.
 - strokeEnd
 The relative location at which to stop stroking the path. Animatable.
 
-一下情况keytimes=[@"0", @"1"];
+以下情况keytimes=[@"0", @"1"];
 1 keyPath = strokeStart  动画的fromValue = 0，toValue = 1 （从有到无）
 strokeEnd默认为1，strokeStart从 0 到 1 ，strokeStart = 0 时有一条完整的路径，strokeStart = 1 时 路径消失。效果就是一条从路径起点到终点慢慢的消失
 

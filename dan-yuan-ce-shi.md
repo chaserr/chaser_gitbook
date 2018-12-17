@@ -21,9 +21,11 @@ int main(int argc, char * argv[]) {
 ```
 使用步骤：
 1. 拷贝gcno和gcda文件
-cp /Users/tongxing/Library/Developer/Xcode/DerivedData/MiDongTrainingCenter-ddlgsjcuhaugmzfhasredqhribms/Build/Intermediates.noindex/MiDongTrainingCenter.build/Debug-iphonesimulator/MiDongTrainingCenter.build/Objects-normal/x86_64/*.gcno
+cp /Users/tongxing/Library/Developer/CoreSimulator/Devices/011831B0-52FF-4842-AD5E-91FF6565F009/data/Containers/Data/Application/E378F577-BBB9-4C01-A831-07056AD90AC2/Documents/x86_64/*gcda /Users/tongxing/Desktop/codeCoverage
 
-cp /Users/tongxing/Library/Developer/Xcode/DerivedData/MiDongTrainingCenter-ddlgsjcuhaugmzfhasredqhribms/Build/Intermediates.noindex/MiDongTrainingCenter.build/Debug-iphonesimulator/MiDongTrainingCenter.build/Objects-normal/x86_64/*.gcda
+cp /Users/tongxing/Library/Developer/Xcode/DerivedData/MiDongTrainingCenter-ddlgsjcuhaugmzfhasredqhribms/Build/Intermediates.noindex/MiDongTrainingCenter.build/Debug-iphonesimulator/MiDongTrainingCenter.build/Objects-normal/x86_64/*.gcda /Users/tongxing/Desktop/codeCoverage
+
+
 
 2. 生成info信息
 lcov -c -d /Users/tongxing/Desktop/codeCoverage  -b /Users/tongxing/HMProject/training -o /Users/tongxing/Desktop/coverage.info

@@ -134,9 +134,28 @@ github "specta/specta" ~> 1.0
 
 > 这里这样写，这就要求你`carthage update`之后你的carthage文件夹必须保持和project在同一个目录路径下
 > 注意修改你的工程配置`Valid Architectures`, 保持和主工程目录一直，不然集成进去会报arm相关的错误
+> public头文件的暴露
 
 2. SDKDemo工程配置
 2.1 SDKDemo工程配置和集成Carthage库一样，
+在`build Phases`中新建一个`Run Script Phases`
+![](http://wx1.sinaimg.cn/mw690/937882b5gy1fyk7obca35j21c40mgq6l.jpg)
+
+然后从Carthage/Build/iOS文件夹中将几个库一一对应的拖入到`Linked Frameworks and Libraries`
+
+保证SDK的demo能够成功运行
+
+将SDK的scheme分享出来
+![](http://wx1.sinaimg.cn/mw690/937882b5gy1fyk7utfguoj218a0fe0xd.jpg)
+
+然后在workspace的根目录下执行`carthage build --no-skip-current --platform iOS`
+
+然后就可以在主工程的cartfile文件中加入
+```ruby
+github "chaserr/CarthageModulesDemo" "master"
+
+
+```
 
 
 

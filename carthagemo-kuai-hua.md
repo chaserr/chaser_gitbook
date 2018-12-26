@@ -158,7 +158,7 @@ github "chaserr/CarthageModulesDemo" "master"
 
 主工程会主动从clone到Carthage/Checkouts/CarthageModulesSDK文件中去读取相应的cartfile文件和podfile文件，不需要我们去关心
 
-
+![](http://wx4.sinaimg.cn/mw690/937882b5gy1fyk8hi2dqoj21600cwad4.jpg)
 
 
 

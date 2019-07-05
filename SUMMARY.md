@@ -123,6 +123,7 @@
   * [CoreData 应用开发实践指南](du-shu-xin-de/coredata-ying-yong-kai-fa-shi-jian-zhi-nan.md)
 * [UML](uml.md)
   * [UML  & iOS](uml/uml-and-ios.md)
+  * [Demo](uml/demo.md)
 * [Git](git.md)
   * [command line](git/command-line.md)
 * [2018 bug事故](2018-bugshi-gu.md)

@@ -392,3 +392,10 @@ class StructLevelItem: UIButton {
 
 left 和leftmargin的区别:假如布局一个view距离屏幕边缘的间距时
 left 默认是最左边，leftmargin则会出现系统默认的间距8
+
+## 监听本地文件状态变化， 比如清理缓存文件，文件大小属性变化
+
+OC ： DISPATCH_SOURCE_TYPE_VNODE
+swift： DispatchSourceFileSystemObject
+
+https://heisenbean.me/2017/06/A-deep-dive-into-Grand-Central-Dispatch-in-Swift/

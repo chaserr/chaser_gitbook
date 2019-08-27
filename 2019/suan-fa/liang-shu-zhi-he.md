@@ -9,6 +9,14 @@
 所以返回 [0, 1]
     
 解法：
+```swift
+    // 耗时测试
+    let start = CACurrentMediaTime()
+    let result = twoSum(bigArr, 16021)
+    let end = CACurrentMediaTime()
+    print("方法耗时为：\(end-start)")
+    print("结果为：\(result)")
+```
 
 ```swift
 // 此解法 为一般解，两次循环 耗时较长。

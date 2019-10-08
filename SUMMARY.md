@@ -139,4 +139,5 @@
     * [两数之和](2019/suan-fa/liang-shu-zhi-he.md)
   * [BLE](2019/ble.md)
     * [相关知识](2019/ble/xiang-guan-zhi-shi.md)
+  * [知识小结](2019/zhi-shi-xiao-jie.md)
 

@@ -10,3 +10,5 @@ scp -i /Users/tongxing/wedding/weddings.pem ec2-user@ec2-13-115-179-184.ap-north
 > `ec2-user@ec2-13-115-179-184.ap-northeast-1.compute.amazonaws.com`： ec2-user@ + 公有 DNS (IPv4)
 > `/home/ec2-user/server.js ` 服务器上文件路径
 > `/Users/tongxing/wedding` 本地要存储的文件目录
+
+3. 从本地上传文件夹

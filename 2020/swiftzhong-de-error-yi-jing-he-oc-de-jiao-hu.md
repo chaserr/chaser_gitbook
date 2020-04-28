@@ -2,3 +2,8 @@ https://blockchain520.github.io/2017/12/01/Swift/Swift/Grammar/Error-Handling-%E
 
 
 如何将oc方法中的error参数定义在swift中转化成throw类型？
+```swift
+- (BOOL)initializeEngineWithError:(NSError * _Nullable *)error;
+```
+
+必须返回值为bool才会在swift文件中被调用是throw类型

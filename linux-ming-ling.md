@@ -1,4 +1,10 @@
-##chmod 
+# Linux  命令
+
+## chmod
+
 修改某个文件的读写权限
-##chown
+
+## chown
+
 修改某个文件的所属组
+

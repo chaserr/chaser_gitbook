@@ -1,6 +1,8 @@
-常用宏定义：
-__deprecated_msg() 弃用某方法
-eg:
-+ (NSArray*)getAllAlias __deprecated;
+# \#define
 
-__unavailable 某个方法不可用
+常用宏定义： \_\_deprecated\_msg\(\) 弃用某方法 eg:
+
+* \(NSArray\*\)getAllAlias \_\_deprecated;
+
+\_\_unavailable 某个方法不可用
+

@@ -1,4 +1,6 @@
-https://www.cnblogs.com/pangjianxin/p/7877868.html
+# Demo
+
+[https://www.cnblogs.com/pangjianxin/p/7877868.html](https://www.cnblogs.com/pangjianxin/p/7877868.html)
 
 虚线箭头指向依赖；
 
@@ -12,4 +14,5 @@ https://www.cnblogs.com/pangjianxin/p/7877868.html
 
 实心菱形精密关联不可分，是组合；
 
-![](/assets/2799767-3f16972d7b062110.png)
+![](../.gitbook/assets/2799767-3f16972d7b062110.png)
+

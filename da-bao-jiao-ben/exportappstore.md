@@ -1,29 +1,34 @@
-exportAppstore.plist:
-``` javascript
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>method</key>
-	<string>app-store</string>
-	<key>uploadBitcode</key>
-	<true/>
-	<key>uploadSymbols</key>
-	<true/>
-</dict>
-</plist>
-```
+# exportAppstore
 
-exportTest.plist
+exportAppstore.plist:
+
 ```javascript
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>method</key>
-	<string>ad-hoc</string>
-	<key>compileBitcode</key>
-	<false/>
+    <key>method</key>
+    <string>app-store</string>
+    <key>uploadBitcode</key>
+    <true/>
+    <key>uploadSymbols</key>
+    <true/>
 </dict>
 </plist>
 ```
+
+exportTest.plist
+
+```javascript
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>method</key>
+    <string>ad-hoc</string>
+    <key>compileBitcode</key>
+    <false/>
+</dict>
+</plist>
+```
+

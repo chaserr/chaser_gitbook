@@ -1,8 +1,6 @@
-1、几个已知的滑动或者滑动开始结束的方法：
-onScroll：在滚动过程中, 每帧最多调用一次此函数, 调用的频率可以用scrollEventThrottle属性来控制. 
-onMomentumScrollEnd：当一帧滚动完毕时调用. 
-onScrollAnimationEnd ：ios上的当滚动动画结束时调用. 
-2、还有其他的一些事件如下，触摸事件里面有携带event，大家可以再下面的方法里面更改一些view操作就可以打印出来这些event携带的信息了
+# ScrollerView
+
+1、几个已知的滑动或者滑动开始结束的方法： onScroll：在滚动过程中, 每帧最多调用一次此函数, 调用的频率可以用scrollEventThrottle属性来控制. onMomentumScrollEnd：当一帧滚动完毕时调用. onScrollAnimationEnd ：ios上的当滚动动画结束时调用. 2、还有其他的一些事件如下，触摸事件里面有携带event，大家可以再下面的方法里面更改一些view操作就可以打印出来这些event携带的信息了
 
 1、onScrollBeginDrag：一个子view滑动开始拖动开始时触发，注意和onMomentumScrollBegin的区别
 

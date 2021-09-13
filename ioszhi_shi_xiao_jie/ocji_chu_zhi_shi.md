@@ -105,3 +105,15 @@ eg:
 }
 ```
 
+建议POST请求参数字典的写法,这样比较装逼~
+
+```c
+// NSDictionaryOfVariableBindings这个宏生成一个字典,这个宏可以生成一个变量名到变量值映射的Dictionary,比如:
+NSNumber * packId=@(2);
+NSNumber *userId=@(22);
+NSNumber *proxyType=@(2);
+NSDictionary *param=NSDictionaryOfVariableBindings(packId,userId,proxyType);
+```
+
+子类修改父类私有变量和方法 [http://www.iosfly.com/2014/05/14/SubClass-modify-SupClass-Property-Protocol/](http://www.iosfly.com/2014/05/14/SubClass-modify-SupClass-Property-Protocol/)
+

@@ -13,3 +13,12 @@
 image lookup --address 0x0000000100004af8
 
 ```
+
+e 改变结果
+
+---
+breakpoint
+1. 全局断点
+2. 条件断点
+3. 断点共享
+3. debugreport

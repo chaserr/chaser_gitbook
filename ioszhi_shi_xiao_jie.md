@@ -22,3 +22,5 @@ http://www.tuicool.com/articles/r6nuIz7
 ###系统私有文件夹，一般不允许私自访问
 http://bbs.25pp.com/thread-84967-1-1.html
 
+###为什么加入-ObjC、-all_load，可以解决部分编译器错误？
+http://www.cnblogs.com/machao/p/5288460.html

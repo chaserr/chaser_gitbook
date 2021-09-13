@@ -81,7 +81,8 @@ extern的原理:先在当前文件中查找全局变量,如果没有,再去其�
 
 ```objc
 #import 
-@interface ViewController : UIViewController//只给外界暴露出一个制只读变量moneyextern NSString *const money;@end
+@interface ViewController : UIViewController//只给外界暴露出一个制只读变量moneyextern NSString *const money;
+@end
 ```
 
 ```objc

@@ -6,3 +6,5 @@
 
 \_\_unavailable 某个方法不可用
 
+[http://www.cnblogs.com/ningmengcao-ios/p/7228210.html](http://www.cnblogs.com/ningmengcao-ios/p/7228210.html)
+

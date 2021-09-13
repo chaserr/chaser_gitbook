@@ -1,4 +1,37 @@
 # Swift Blog
+## any和 anyobject
+AnyObject 可以代表任何 class 类型的实例
+Any 可以表示任意类型，甚至包括方法 (func) 类型
+：
+AnyObject是Any的子集
+所有用class关键字定义的对象就是AnyObject
+所有不是用class关键字定义的对象就不是AnyObject,而是Any
+##类型安全
+由于 Swift 是类型安全的，所以它会在编译你的代码时进行类型检查(type checks)，并把不匹配的类型标记为错误。这可以让你在开发的时候尽早发现并修复错误。
+
+##swift中的 KVC,KVO
+那么 KVO 和 KVC 呢？KVO 的魅力在于，您可以在不是自己所创建的类当中使用它，也可以只对您想要监听变化的类使用。KVO 和 KVC 在 Swift 被极大地削弱了。您所观察的对象必须要继承自 NSObject，并且使用一个 Objective-C 类型。您所观察的变量必须要声明为 dynamic。您必须要对想要观察的事务了如指掌。
+您可以使用 Rx 或者基于协议来观察对象。但是语言自身是没有原生的解决方案的。
+
+##swift中的 runtime, 以及关键字@objc 和dynamic关键字的作用
+http://blog.csdn.net/TogeWu/article/details/51151326
+动态性最重要的一点就是拿到某个类的方法和属性
+
+
+1:纯Swift类的函数调用已经不是OC那样的运行时消息了,而是类似C++似得vtable,在编译时就确定了调用那个函数了.
+
+
+Swift代码中已经没有了Objective-C的运行时消息机制, 在代码编译时即确定了其实际调用的方法. 所以纯粹的Swift类和对象没有办法使用runtime, 更不存在method swizzling.
+为了兼容Objective-C, 凡是继承NSObject的类都会保留其动态性, 依然遵循Objective-C的运行时消息机制, 因此可以通过runtime获取其属性和方法, 实现method swizzling.
+
+继承自NSObject的类都遵循runtime, 那么纯粹的Swift类呢?
+在属性和方法之前加上@objc关键字, 则一般情况下可以在runtime中使用了. 但有一些情况下, Swift会做静态优化而无法使用runtime.
+要想完全使得属性和方法被动态调用, 必须使用dynamic关键字. 而dynamic关键字会隐式地加上@objc来修饰.
+获取Swift类的runtime信息的方法, 要加上Swift模块名:
+id cls = objc_getClass("DemoSwift.MySwiftClass")
+
+>加了@objc标识的方法、属性无法保证都会被运行时调用，因为Swift会做静态优化。要想完全被动态调用，必须使用dynamic修饰。使用dynamic修饰将会隐式的加上@objc标识。
+
 ### To learn a little a day
 
 ## static和class
@@ -359,3 +392,10 @@ class StructLevelItem: UIButton {
 
 left 和leftmargin的区别:假如布局一个view距离屏幕边缘的间距时
 left 默认是最左边，leftmargin则会出现系统默认的间距8
+
+## 监听本地文件状态变化， 比如清理缓存文件，文件大小属性变化
+
+OC ： DISPATCH_SOURCE_TYPE_VNODE
+swift： DispatchSourceFileSystemObject
+
+https://heisenbean.me/2017/06/A-deep-dive-into-Grand-Central-Dispatch-in-Swift/
